@@ -352,6 +352,10 @@ section {
     height:200px;
     width:250px;
 }
+.logo2{
+height:200px;
+width:280px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects-wrapper {
@@ -384,7 +388,9 @@ section {
     height: 320px; 
     overflow: hidden;
 }
-
+.proname{
+    margin-top:-10px;
+}
 /* Default state: Tooltip & Button hidden */
 .tooltip, .project-btn {
     opacity: 0;

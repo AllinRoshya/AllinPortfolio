@@ -142,10 +142,40 @@ function Landing() {
         <a href="https://scratch.mit.edu/projects/1041087381" target="_blank" rel="noopener noreferrer" className="project-link">
             <article className="project-card">
                 <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193230/bm_guco3x.svg" className="logo" />
-                <h3>Scratch Project</h3>
+                <h3 className="proname">Scratch Project</h3>
                 <span className="tooltip">Scratch</span>
             </article>
         </a>
+
+         {/* Projects(6-12) */}
+
+         <a href="https://github.com/AllinRoshya/Thread" target="_blank" rel="noopener noreferrer" className="project-link">
+            <article className="project-card">
+                <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742211265/download_3_f3sm2a.jpg" className="logo2" />
+                <h3>Race</h3>
+                <span className="tooltip">Java (Advanced)</span>
+            </article>
+        </a>
+
+        <a href="https://github.com/AllinRoshya/Alarm" target="_blank" rel="noopener noreferrer" className="project-link">
+            <article className="project-card">
+                <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742213064/flat-design-vector-icon-isolated-background-cartoon-alarm-clock-ringing-wake-up-morning-concept-cartoon-alarm-clock-ringing-91972142_ttqc3z.webp" className="logo2" />
+                <h3>Alarm</h3>
+                <span className="tooltip">Java (Advanced)</span>
+            </article>
+        </a>
+        
+
+        <a href="https://allink-7273-8443.zcodeusers.in/jsAssignment023/" target="_blank" rel="noopener noreferrer" className="project-link">
+            <article className="project-card">
+                <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742212352/download_5_frc6dp.jpg" className="logo2" />
+                <h3>Rock Paper Scissor Lizard Spock</h3> 
+                <span className="tooltip">JavaScript</span>
+            </article>
+        </a>
+
+       
+
 
     </div>
 </section>
