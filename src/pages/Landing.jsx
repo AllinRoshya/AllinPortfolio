@@ -54,7 +54,7 @@ function Landing() {
 <section id="aboutme">
     <div className="aboutme-content">
         <h2 className="name">I am Allin Roshya</h2>
-        <h2 className="dev">Backend Developer </h2>
+        <h2 className="dev">Backend Trainee </h2>
         
     </div>
     <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193230/img_mbjrfk.png" className="profile-image" alt="Profile" />
