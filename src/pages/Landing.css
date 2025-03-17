@@ -52,6 +52,21 @@ body {
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
+.para {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
 
 .nav-links a:hover {
     color: #ffdd57;

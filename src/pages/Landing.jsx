@@ -42,7 +42,7 @@ function Landing() {
         <>
             {/* Navigation Bar */}
             <nav className="navbar">
-                <h1>MyPortFolio</h1>
+                <h1>My Portfolio</h1>
                 <ul className="nav-links" >
                     <li><Link to="aboutme" smooth={true} duration={600}>About</Link></li>
                     <li><Link to="skills" smooth={true} duration={600}>Skills</Link></li>
@@ -55,7 +55,7 @@ function Landing() {
     <div className="aboutme-content">
         <h2 className="name">I am Allin Roshya</h2>
         <h2 className="dev">Backend Trainee </h2>
-        
+        <p className='para'>I love solving problems and building efficient backend systems. Always eager to learn and improve, I enjoy making code faster and more reliable. Passionate about turning challenges into seamless solutions!</p>
     </div>
     <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193230/img_mbjrfk.png" className="profile-image" alt="Profile" />
 </section>
