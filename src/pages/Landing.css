@@ -254,7 +254,7 @@ section {
     margin: auto;
 }
 
-.project-card {
+/* .project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,59 +265,73 @@ section {
     font-size: 18px;
     font-weight: bold;
     color: white;
-      position: relative;
+    position: relative;
     text-align: center;
     transition: all 0.3s ease-in-out;
     width: 300px;
-    text-align: center;
-}
+    height: 320px; 
+    overflow: hidden;
+} */
 
-.project-card:hover {
-    transform: scale(1.05);
-background-color: #121212;
-box-shadow: 0 5px 15px rgba(255, 221, 87, 0.6);
-        color: white;
-        transform: scale(1.1);
-    
-}
 
-.project-card::after {
-    content: attr(data-description); /* Display the data-description text */
+/* Tooltip */
+/* .tooltip {
     position: absolute;
-    top: -30px; /* Position above the project card */
+    bottom: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    transform: translate(-50%, 10px);
+    border: 2px solid #ff8800;
+    color: greenyellow;
     padding: 5px 10px;
+    height:30px;
+    opacity:1;
     border-radius: 5px;
     font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s;
 }
 
-.project-card:hover::after {
+/* Show Tooltip on Hover */
+/* .project-card:hover .tooltip {
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+.project-card:hover {
+    background: #292929; 
+    transform: scale(1.1); 
+    opacity:0.5;
+    color: white; 
+    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.3); /* Soft glowing effect */
+/* } */
+
+/* .project-card:hover .project-btn {
+ 
     opacity: 1;
-}
+    visibility: visible;
+    transform: translateY(0);
+}  */
 
-.project-btn {
+/* View Project Button */
+/* .project-btn {
     background: #ff8800; 
     color: white;
-    
     border: none;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s ease-in-out;
-}
+    transition: transform 0.3s ease-in-out;
+    opacity: 1;
+    visibility: hidden;
+    transform: translateY(10px);
+} */
 
-.project-btn:hover {
+/* .project-btn:hover {
     transform: scale(1.1);
-}
+}  */
+
+
 .footer{
     height:60px;
     width:100%;
@@ -330,12 +344,13 @@ box-shadow: 0 5px 15px rgba(255, 221, 87, 0.6);
     font-size:22px;
 }
 .logo{
-    height:100px;
-    width:150px;
+    height:200px;
+    width:250px;
+    margin-bottom:20px;
 }
 .logo1{
-    height:100px;
-    width:100px;
+    height:200px;
+    width:250px;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -343,4 +358,70 @@ box-shadow: 0 5px 15px rgba(255, 221, 87, 0.6);
         flex-direction: column;
         align-items: center;
     }
+}
+.project-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits text color */
+    display: block; /* Makes the whole area clickable */
+}
+
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    height: 320px; 
+    overflow: hidden;
+}
+
+/* Default state: Tooltip & Button hidden */
+.tooltip, .project-btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s;
+}
+
+/* On Hover: Tooltip & Button fully visible */
+.project-card:hover .tooltip, 
+.project-card:hover .project-btn {
+    box-shadow: 0 5px 15px #ffdd5799;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Make everything else dull */
+.project-card:hover h3,
+.project-card:hover img{
+    opacity: 0.3;
+    filter: blur(1px);
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    bottom: 50%;
+    left: 100px;
+    transform: translate(-50%, 10px);
+    border: 2px solid #ff8800;
+    color: greenyellow;
+    height:40px;
+    width:150px;
+    padding-top:18px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s;
 }
