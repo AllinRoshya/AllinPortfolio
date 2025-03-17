@@ -1,0 +1,346 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #121212;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+    
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-right:70px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
+}
+.navbar {
+    background: #121212;
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar.light-navbar {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.navbar.light-navbar .nav-links a {
+    color: black;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Sections */
+section {
+    padding: 100px 10%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills {
+    background: #1E1E1E;
+    padding: 100px 10%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    background: #121212;
+    padding-bottom:200px;
+}
+/* About Me Section */
+#aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    flex-direction: row;
+    background: white;
+    color: black;
+    padding: 100px 10%;
+    margin-left:150px;
+    min-height: 800px;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Animation for sliding in */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* About Me Text */
+.aboutme-content {
+    flex: 1;
+    max-width: 600px;
+    animation: slideIn 1s ease-in-out forwards;
+    opacity: 0; 
+}
+
+.name {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #ffdd57, #ff8800);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dev {
+    font-size: 2rem;
+    color: #121212;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 50px;
+    opacity: 0;
+    animation: slideIn 1.2s ease-in-out forwards;
+    animation-delay: 0.3s; 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.aboutme-content:hover .name,
+.aboutme-content:hover .dev,
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Section Divider Bar */
+.bar {
+    width: 80px;
+    height: 4px;
+    background: #ffdd57;
+    margin: 10px auto 60px auto;
+    border-radius: 5px;
+}
+
+/* Skills Section */
+.skills-wrapper {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 50px; 
+    padding: 20px;
+    max-width:1000px;
+    height:250px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    height:70px;
+    width:200px;
+    padding-left:50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    gap: 10px; 
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    color: white;
+    border:2px solid #ffdd57;
+    box-shadow: 0 4px 12px rgba(255, 200, 50, 0.4); 
+    filter: brightness(0.9);
+    cursor:default;
+}
+
+/* Icon Styling */
+.icon {
+    width: 45px;
+    height: 45px;
+}
+
+.java-icon {
+    color: #f89820;
+    font-size: 35px;
+}
+
+.react-icon {
+    color: #61dbfb;
+    font-size: 35px;
+}
+
+.js-icon {
+    color: #f7df1e;
+    font-size: 35px;
+}
+
+
+/* Projects */
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 100px; 
+    padding: 20px;
+    max-width: 1800px;
+    margin: auto;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+      position: relative;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+background-color: #121212;
+box-shadow: 0 5px 15px rgba(255, 221, 87, 0.6);
+        color: white;
+        transform: scale(1.1);
+    
+}
+
+.project-card::after {
+    content: attr(data-description); /* Display the data-description text */
+    position: absolute;
+    top: -30px; /* Position above the project card */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
+.project-btn {
+    background: #ff8800; 
+    color: white;
+    
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.project-btn:hover {
+    transform: scale(1.1);
+}
+.footer{
+    height:60px;
+    width:100%;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:22px;
+}
+.logo{
+    height:100px;
+    width:150px;
+}
+.logo1{
+    height:100px;
+    width:100px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
