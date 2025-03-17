@@ -52,21 +52,6 @@ body {
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
-.para {
-    font-size: 18px;
-    color: black;
-    text-align: center;
-    line-height: 1.6;
-    margin-top: 10px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 400;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-}
 
 .nav-links a:hover {
     color: #ffdd57;
@@ -145,15 +130,18 @@ section {
 
 /* About Me Text */
 .aboutme-content {
-    flex: 1;
-    max-width: 600px;
-    animation: slideIn 1s ease-in-out forwards;
-    opacity: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns everything to the left */
+    justify-content: center;
+    width: 600px; /* Set a fixed width */
+    margin: 50px 0px; /* Centers the block on the page */
 }
 
 .name {
     font-size: 3.5rem;
-    margin-bottom: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
     background: linear-gradient(to right, #ffdd57, #ff8800);
     -webkit-background-clip: text;
     background-clip: text;
@@ -164,10 +152,24 @@ section {
 
 .dev {
     font-size: 2rem;
+    font-weight: bold;
     color: #121212;
-    margin-top: 30px;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
+
+.para {
+    font-size: 18px;
+    margin-left:-10px;
+    color: black;
+    line-height: 1.6;
+    font-weight: 400;
+    width: 100%; /* Makes sure it starts from the same point */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
 
 /* Profile Image */
 .profile-image {
