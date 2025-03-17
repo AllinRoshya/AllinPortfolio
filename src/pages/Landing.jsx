@@ -57,7 +57,7 @@ function Landing() {
         <h2 className="dev">Backend Developer </h2>
         
     </div>
-    <img src="src/assets/img.png" className="profile-image" alt="Profile" />
+    <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193230/img_mbjrfk.png" className="profile-image" alt="Profile" />
 </section>
 
 
@@ -79,7 +79,7 @@ function Landing() {
             JavaScript
         </span>
         <span className="skill">
-            <img src="src/assets/htmlandcss.svg" 
+            <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193227/htmlandcss_qfsxuz.svg" 
             className="icon" alt="HTML/CSS" />
             HTML/CSS
         </span>
@@ -88,7 +88,7 @@ function Landing() {
             MySQL
         </span>
         <span className="skill">
-            <img src="src/assets/scratch.png" 
+            <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193227/scratch_c9gfbj.png" 
             className="icon" alt="Scratch" />
             Scratch
         </span>
@@ -99,7 +99,7 @@ function Landing() {
     <h2 className="name">Projects</h2>
     <div className="projects-wrapper">
     <article className="project-card">
-    <img src="/src/assets/employee.jpeg" className="logo" />
+    <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193226/employee_dbmggf.jpg" className="logo" />
     <h3>Employee Management System <span className="tooltip">Java (OOPs)</span></h3>
     <a href="https://github.com/AllinRoshya/EMS" target="_blank" rel="noopener noreferrer">
         <button className="project-btn">View Project</button>
@@ -107,7 +107,7 @@ function Landing() {
 </article>
 
 <article className="project-card">
-    <img src="/src/assets/maxresdefault.jpg" className="logo" />
+    <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193227/maxresdefault_ete0km.jpg" className="logo" />
     <h3>Restaurant Management System <span className="tooltip">Data Structure</span></h3>
     <a href="https://github.com/AllinRoshya/RMS" target="_blank" rel="noopener noreferrer">
         <button className="project-btn">View Project</button>
@@ -115,7 +115,7 @@ function Landing() {
 </article>
 
 <article className="project-card">
-    <img src="/src/assets/star.png" className="logo1" />
+    <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193227/star_fs6hv6.png" className="logo1" />
     <h3>Quiz Maker <span className="tooltip">JavaScript</span></h3>
     <a href="https://allink-5402-8443.zcodeusers.in/QUIZ%20MAKER/start.html" target="_blank" rel="noopener noreferrer">
         <button className="project-btn">View Project</button>
@@ -123,7 +123,7 @@ function Landing() {
 </article>
 
 <article className="project-card">
-    <img src="/src/assets/logo.png" className="logo1" />
+    <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193227/logo_zlqqod.png" className="logo1" />
     <h3>RCB <span className="tooltip">HTML/CSS</span></h3>
     <a href="https://allink-7273-8443.zcodeusers.in/MYPROJECT/Home.html" target="_blank" rel="noopener noreferrer">
         <button className="project-btn">View Project</button>
@@ -131,7 +131,7 @@ function Landing() {
 </article>
 
 <article className="project-card">
-    <img src="/src/assets/Git Grove.jpg" className="logo1" />
+    <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193227/Git_Grove_ikbtq0.jpg" className="logo1" />
     <h3>Git Grove <span className="tooltip">Java (Advanced)</span></h3>
     <a href="https://github.com/rajkumarkvr/GitGrove_backend" target="_blank" rel="noopener noreferrer">
         <button className="project-btn">View Project</button>
@@ -139,7 +139,7 @@ function Landing() {
 </article>
 
 <article className="project-card">
-    <img src="/src/assets/bm.svg" className="logo" />
+    <img src="https://res.cloudinary.com/dcqy9shzk/image/upload/v1742193230/bm_guco3x.svg" className="logo" />
     <h3>Scratch Project <span className="tooltip">Scratch</span></h3>
     <a href="https://scratch.mit.edu/projects/1041087381" target="_blank" rel="noopener noreferrer">
         <button className="project-btn">View Project</button>
