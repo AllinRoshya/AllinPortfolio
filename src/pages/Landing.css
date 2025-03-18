@@ -267,99 +267,11 @@ section {
     justify-content: center; 
     gap: 100px; 
     padding: 20px;
+
     max-width: 1800px;
-    margin: auto;
+    margin-top:30px;
 }
 
-/* .project-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    position: relative;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    width: 300px;
-    height: 320px; 
-    overflow: hidden;
-} */
-
-
-/* Tooltip */
-/* .tooltip {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 10px);
-    border: 2px solid #ff8800;
-    color: greenyellow;
-    padding: 5px 10px;
-    height:30px;
-    opacity:1;
-    border-radius: 5px;
-    font-size: 14px;
-    background: rgba(0, 0, 0, 0.8);
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, transform 0.3s;
-}
-
-/* Show Tooltip on Hover */
-/* .project-card:hover .tooltip {
-    visibility: visible;
-    transform: translate(-50%, 0);
-}
-.project-card:hover {
-    background: #292929; 
-    transform: scale(1.1); 
-    opacity:0.5;
-    color: white; 
-    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.3); /* Soft glowing effect */
-/* } */
-
-/* .project-card:hover .project-btn {
- 
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}  */
-
-/* View Project Button */
-/* .project-btn {
-    background: #ff8800; 
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    opacity: 1;
-    visibility: hidden;
-    transform: translateY(10px);
-} */
-
-/* .project-btn:hover {
-    transform: scale(1.1);
-}  */
-
-
-.footer{
-    height:60px;
-    width:100%;
-    background-color: white;
-    color: black;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:22px;
-}
 .logo{
     height:200px;
     width:250px;
@@ -373,13 +285,7 @@ section {
 height:200px;
 width:280px;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-    .projects-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 .project-link {
     text-decoration: none; /* Removes underline */
     color: inherit; /* Inherits text color */
@@ -448,3 +354,229 @@ width:280px;
     background: rgba(0, 0, 0, 0.8);
     transition: opacity 0.3s ease-in-out, transform 0.3s;
 }
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+  }
+  
+  .project-filters button {
+    margin: 5px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #000; 
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .project-filters button:hover {
+    background-color: #333; /* slightly lighter on hover */
+  }
+  
+  .project-filters button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.3);
+  }
+  
+  .project-filters button.active {
+    background-color: #fff;   /* white background when active */
+    color: #000;             /* dark text when active */
+    border: 1px solid #000;
+  }
+  .footer {
+    width: 100%;
+    height:200px;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom:20px;
+    gap: 5px; /* spacing between lines */
+}
+
+.contact {
+    font-size: 40px;
+    color: #f89820;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .navbar {
+      padding: 15px 20px;
+    }
+  
+    .nav-links {
+      gap: 15px;
+      margin-right: 30px;
+    }
+  
+    section {
+      padding: 80px 5%;
+    }
+  
+    #aboutme {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .aboutme-content {
+      width: 100%;
+      align-items: center;
+      margin: 30px 0;
+    }
+  
+    .para {
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .profile-image {
+      width: 300px;
+      height: 300px;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .skills-wrapper {
+      gap: 30px;
+      height: auto;
+    }
+  
+    .project-card {
+      width: 250px;
+      height: 280px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: 0;
+    }
+  
+    .name {
+      font-size: 2.5rem;
+    }
+  
+    .dev {
+      font-size: 1.5rem;
+    }
+  
+    .profile-image {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .skills-wrapper {
+      gap: 20px;
+    }
+  
+    .skill {
+      width: 150px;
+      padding-left: 20px;
+      height: 60px;
+    }
+  
+    .project-filters button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    .project-card {
+      width: 220px;
+      height: 260px;
+    }
+  
+    .contact {
+      font-size: 30px;
+    }
+  
+    .footer {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar {
+      padding: 10px 10px;
+    }
+  
+    .nav-links {
+      gap: 10px;
+      font-size: 14px;
+    }
+  
+    .name {
+      font-size: 2rem;
+    }
+  
+    .dev {
+      font-size: 1.2rem;
+    }
+  
+    .profile-image {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .skills-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill {
+      width: 100%;
+      padding-left: 0;
+      justify-content: center;
+    }
+  
+    .project-filters {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .project-card {
+      width: 200px;
+      height: 240px;
+    }
+  
+    .tooltip {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      font-size: 14px;
+    }
+  
+    .contact {
+      font-size: 25px;
+    }
+  
+    .footer {
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+  }
+  
