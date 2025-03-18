@@ -123,13 +123,14 @@ function Landing() {
         <>
             {/* Navigation Bar */}
             <nav className="navbar">
-                <h1>My Portfolio</h1>
-                <ul className="nav-links">
-                    <li><Link to="aboutme" smooth={true} duration={600}>About</Link></li>
-                    <li><Link to="skills" smooth={true} duration={600}>Skills</Link></li>
-                    <li><Link to="projects" smooth={true} duration={600}>Projects</Link></li>
-                </ul>
-            </nav>
+  <h1>My Portfolio</h1>
+  <ul className="nav-links">
+    <li><Link to="aboutme" smooth={true} duration={600} spy={true} activeClass="active-link">About</Link></li>
+    <li><Link to="skills" smooth={true} duration={600} spy={true} activeClass="active-link">Skills</Link></li>
+    <li><Link to="projects" smooth={true} duration={600} spy={true} activeClass="active-link">Projects</Link></li>
+  </ul>
+</nav>
+
 
             {/* About Me */}
             <section id="aboutme">

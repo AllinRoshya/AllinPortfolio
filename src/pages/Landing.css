@@ -35,7 +35,15 @@ body {
     
     
 }
-
+.nav-links a.active-link {
+   
+    border-bottom: 3px solid #ffdd57;
+}
+/* .nav-links a.active-link1 {
+    background-color: #ffdd57;  
+    height:40px;
+    width:120px;
+} */
 /* Navbar Links */
 .nav-links {
     list-style: none;
@@ -63,7 +71,7 @@ body {
 }
 
 .navbar.light-navbar {
-    background: rgba(255, 255, 255, 0.9);
+    background: white;
     color: black;
 }
 
@@ -559,7 +567,7 @@ width:280px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 10px 0;
+      padding:8px 0;
     }
   
     .nav-links {
