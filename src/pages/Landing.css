@@ -416,14 +416,6 @@ width:280px;
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 1024px) {
-    .navbar {
-      padding: 15px 20px;
-    }
-  
-    .nav-links {
-      gap: 15px;
-      margin-right: 30px;
-    }
   
     section {
       padding: 80px 5%;
@@ -466,16 +458,6 @@ width:280px;
   }
   
   @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .nav-links {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-right: 0;
-    }
   
     .name {
       font-size: 2.5rem;
@@ -520,14 +502,6 @@ width:280px;
   }
   
   @media screen and (max-width: 480px) {
-    .navbar {
-      padding: 10px 10px;
-    }
-  
-    .nav-links {
-      gap: 10px;
-      font-size: 14px;
-    }
   
     .name {
       font-size: 2rem;
@@ -577,6 +551,44 @@ width:280px;
     .footer {
       padding: 20px 10px;
       font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+    }
+  
+    .nav-links {
+      margin: 0;
+      padding: 0;
+      gap: 15px;
+      justify-content: center;
+    }
+  
+    .nav-links a {
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+  
+  @media screen and (max-width: 480px) {
+    .navbar {
+      padding: 8px 0;
+    }
+  
+    .nav-links {
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    .nav-links a {
+      font-size: 14px;
+      text-align: center;
     }
   }
   
