@@ -38,9 +38,9 @@ function Landing() {
               category: "java",
           },
           {
-              link: "https://github.com/AllinRoshya/Alarm",
-              img: "https://res.cloudinary.com/dcqy9shzk/image/upload/v1742213064/flat-design-vector-icon-isolated-background-cartoon-alarm-clock-ringing-wake-up-morning-concept-cartoon-alarm-clock-ringing-91972142_ttqc3z.webp",
-              title: "Alarm",
+              link: "https://github.com/AllinRoshya/Stackandqueue",
+              img: "https://res.cloudinary.com/dcqy9shzk/image/upload/v1742799184/stack-vs-queue_vgvuc1.jpg",
+              title: "Stack and Queue",
               tooltip: "Java (Advanced)",
               category: "java",
           },
